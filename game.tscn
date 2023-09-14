@@ -8,6 +8,9 @@ bounce = 0.5
 
 [node name="Walls" type="StaticBody2D" parent="."]
 
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls"]
+polygon = PackedVector2Array(-16, 0, -18, 0, -128, 0, -128, -128, 896, -128, 896, 608, -128, 608, -128, 0, -16, 0, -16, 512, 800, 512, 800, 0)
+
 [node name="Object1" type="RigidBody2D" parent="."]
 metadata/_edit_group_ = true
 
